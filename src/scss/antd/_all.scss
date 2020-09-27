@@ -1,0 +1,26 @@
+@import "select";
+
+
+.announcement{
+  margin-bottom: 42px;
+
+  p{
+    font-size: 16px;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(#000,0.15);
+    &.success{
+      background-color: $success-color;
+    }
+    &.danger{
+      background-color: $danger-color;
+    }
+    &.warning{
+      background-color: $warning-color;
+    }
+    &.neutral{
+      background-color: black;
+    }
+  }
+}

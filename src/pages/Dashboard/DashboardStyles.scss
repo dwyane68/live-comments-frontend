@@ -1,0 +1,18 @@
+.my-dashboard{
+  width: 100%;
+  padding: 18px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 24px rgba(#000, 0.25);
+
+  h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 34px;
+    @include breakpoint(500) {
+      font-size: 20px;
+    }
+  }
+}

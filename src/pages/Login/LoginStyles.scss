@@ -1,0 +1,51 @@
+.auth{
+  background: linear-gradient(to bottom, #0484f0, $primary-color);
+  // height: 100%;
+  padding-top: 50px;
+  .logo{
+    text-align: center;
+
+    img{
+      width: 140px;
+      height: auto;
+    }
+  }
+
+  .title{
+    font-size: 32px;
+    font-weight: bold;
+    color: $primary-color;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .sub-title{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .ant-card{
+    width: 420px;
+    padding: 24px;
+    //min-height: 400px;
+    margin: auto;
+    margin-top: 24px;
+    border-radius: 20px;
+    box-shadow: 0 0 24px rgba(#000, 0.15);
+    @include breakpoint(500) {
+      width: 90%;
+      padding: 0;
+      margin: 15px;
+    }
+    .ant-btn{
+      font-weight: bold;
+      height: 52px;
+      font-size: 18px;
+    }
+    .ant-col {
+      @include breakpoint(500) {
+        margin: 0;
+      }
+    }
+  }
+}
+

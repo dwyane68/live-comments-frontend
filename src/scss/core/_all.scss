@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+@import "media";
+@import "reset";
+
+.ant-table-wrapper {
+    overflow: auto;
+}
+
+.ant-drawer-right {
+    .ant-drawer-content-wrapper {
+        width: 480px!important;
+        @include breakpoint(500) {
+            width: 280px!important;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+/* media queries */
+
+@media screen and (max-width: 1280px) {
+}
+
+
+@mixin screen1200 {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin screen1024 {
+  @media screen and (max-width: 1060px) {
+    @content;
+  }
+}
+
+@mixin screen992 {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin screen960 {
+  @media screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin screen800 {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin screen768 {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screen767 {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin screen720 {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin screen640 {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin screen576 {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin screen540 {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin screen460 {
+  @media screen and (max-width: 460px) {
+    @content;
+  }
+}
+
+@mixin screen375 {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin screen360 {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin screen320 {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media only screen and (max-device-width: 700px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+
+@mixin xs {
+  @media only screen and (max-width: 576px) {
+    @content
+  }
+}
+
+@mixin sm {
+  @media only screen and (max-width: 768px) {
+    @content
+  }
+}
+
+@mixin md {
+  @media only screen and (max-width: 992px) {
+    @content
+  }
+}
+
+@mixin lg {
+  @media only screen and (max-width: 1200px) {
+    @content
+  }
+}

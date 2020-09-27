@@ -1,0 +1,19 @@
+
+.main-bar{
+  .ant-select{
+    .ant-select-selection--single{
+      height: 50px;
+      min-width: 160px;
+    }
+    .ant-select-selection__rendered{
+      line-height: 50px;
+    }
+  }
+}
+
+.ant-select-dropdown{
+  .ant-select-dropdown-menu-item{
+    padding: 12px;
+    font-size: 16px;
+  }
+}
