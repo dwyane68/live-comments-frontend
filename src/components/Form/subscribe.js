@@ -1,7 +1,6 @@
 import React from 'react';
 import { Form, Select, Input, Button, message, Card, Tag } from 'antd';
 import {subscribe, unsubscribe } from "../../services/ajax";
-import config from '../../config';
 import Comments from '../Comment';
 
 const { Option } = Select;
