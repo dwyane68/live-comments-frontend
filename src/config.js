@@ -7,11 +7,11 @@ export const path = {
 // export const basename = '/';
 //
 export const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'http://localhost:1337'
+  ? 'https://quillbot-backend.herokuapp.com'
   : process.env.NODE_ENV === 'staging' ? 'http://localhost:1337' : 'http://localhost:1337';
 
 export const APP_URL = process.env.NODE_ENV === 'production'
-  ? 'http://localhost:3000'
+  ? 'https://quillbot-frontend.herokuapp.com'
   : process.env.NODE_ENV === 'staging' ? 'http://localhost:3000' : 'http://localhost:3000';
 export const SOCKET_PORT = process.env.NODE_ENV === 'production'
   ? 1342
