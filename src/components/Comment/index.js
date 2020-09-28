@@ -23,7 +23,8 @@ class Comments extends React.Component {
     this.state = {
       comments: []
     };
-    this.socket = SocketIOClient(`${BASE_URL}:${SOCKET_PORT}`, {
+    // this.socket = SocketIOClient(`${BASE_URL}:${SOCKET_PORT}`, {
+      this.socket = SocketIOClient(`${BASE_URL}`, {
     // this.socket = SocketIOClient(`http://127.0.0.1:1342`, {
       transports: ['websocket'],
       reconnection: true,
