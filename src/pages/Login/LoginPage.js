@@ -25,7 +25,6 @@ class LoginPage extends React.Component{
           <div className={'login'}>
           <Card bordered={false}>
             <div className={'title'}>Quillbot</div>
-            <p className={'sub-title'}>Please log in using google to continue!</p>
               <a href={`${BASE_URL}/auth/google`}>
                 {/* <Button block type={'primary'} size={'large'} shape={'round'} icon={<GoogleOutlined />}> */}
                 <Button block type={'primary'} size={'large'} shape={'round'}>

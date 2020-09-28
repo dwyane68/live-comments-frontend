@@ -61,7 +61,9 @@ class SubscribeForm extends React.Component {
   };
 
   unsubscribe = () => {
-    unsubscribe({}, () => {}, () => {});
+    unsubscribe({}, () => {
+      message.success("Unsubscribed!");
+    }, () => {});
     this.setState({
         subscribed: false,
         url: '',
@@ -90,16 +92,32 @@ class SubscribeForm extends React.Component {
                         label="URL"
                     >
                         {getFieldDecorator("url", {
-                        rules: [{ required: true, message: 'Please input livestream URL!' }]
+                        rules: [
+                          { required: true, message: 'Please input livestream URL!' }
+                        ]
                     })(<Input />)}
                     </Form.Item>
                     <Form.Item
                         label="Add Keywords"
                     >
                         {getFieldDecorator("keywords", {
-                            rules: [{ required: true, message: 'Kewords are required!' }]
+                            rules: [
+                              { required: true, message: 'Kewords are required!' },
+                              {
+                                validator: (rule, value, callback) => {
+                                  if (value) {
+                                    if (value.length > 10) {
+                                      callback("No more than 10 keywords");
+                                    } else if (value.length <= 10) {
+                                      callback();
+                                    }
+                                  }
+                                  return;
+                                }
+                              }
+                            ]
                         })(
-                            <Select mode="tags" placeholder="add keywords">
+                            <Select mode="tags" placeholder="add keywords" max={10}>
                                 
                             </Select>
                         )}
